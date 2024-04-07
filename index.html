@@ -6,8 +6,244 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px" viewBox="0 0 24 24"><path fill="white" d="M13 3v6h8V3m-8 18h8V11h-8M3 21h8v-6H3m0-2h8V3H3z"/></svg></body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="images/favicon.svg" alt="Dashboard icon">
+            <p class="logo-text">Dashboard</p>
+        </div>
+        <nav class="sidebar-navigation">
+            <ul class="navigation-section">
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi-home"></span>
+                        Home
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi:id-card-outline"></span>
+                        Profile
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="ph:clock-fill"></span>
+                        History
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi:papers"></span>
+                        Tasks
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi:people-group"></span>
+                        Communities
+                    </a>
+                </li>
+            </ul>
+            <ul class="navigation-section">
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="material-symbols:settings"></span>
+                        Settings
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi:question-mark-box"></span>
+                        Support
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="item-link">
+                        <span class="item-icon iconify" data-icon="mdi:shield-check"></span>
+                        Privacy
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <header class="header">
+        <div class="header-top">
+            <div class="top-search">
+                <span class="search-icon iconify" data-icon="material-symbols:search"></span>
+                <input class="search-input" type="search" name="search">
+            </div>
+            <div class="top-profile">
+                <span class="search-icon iconify" data-icon="material-symbols:notifications-active-outline"></span>
+                <img class="user-pfp-sml" src="images/user-pfp.jpeg" alt="User profile pic">
+                <p class="user-name-sml">Morgan Oakley</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="user-info">
+                <img class="user-pfp-lg" src="images/user-pfp.jpeg" alt="User profile pic">
+                <div class="info-content">
+                    <p class="user-greet">Hi there,</p>
+                    <p class="user-name-lg">Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+            <div class="user-actions">
+                <button class="action-btn">New</button>
+                <button class="action-btn">Upload</button>
+                <button class="action-btn">Share</button>
+            </div>
+        </div>
+    </header>
+    <main class="dashboard">
+        <section class="projects">
+            <p class="section-title">Your Projects</p>
+            <div class="projects-cards">
+                <div class="card">
+                    <p class="card-title">Super Cool Project</p>
+                    <p class="card-content">
+                        Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, id
+                        facilisis felis accumsan nec.
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Less Cool Proiect</p>
+                    <p class="card-content">
+                        Nullam condimentum ipsum ut lectus vehicula
+                        consectetur. Quisque sed dolor tincidunt,
+                        consectetur sapien et, facilisis dolor. Duis sem
+                        purus, dignissim ut sapien in, varius pellentesque lacus.
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Impossible App</p>
+                    <p class="card-content">
+                        In hac habitasse platea dictumst. Vivamus
+                        dictum rutrum arcu, a placerat velit sagittis id.
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Easy Peasy App</p>
+                    <p class="card-content">
+                        Etiam cursus eros ac efficitur fringilla.
+                        Vestibulum dignissim urna eget accumsan
+                        aliquam. Curabitur dignissim nisi in tortor
+                        commodo, ac bibendum magna tincidunt.
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Ad Blocker</p>
+                    <p class="card-content">
+                        Quisque eget rutrum nisl. Nam augue
+                        justo, cursus vitae metus vel, pharetra
+                        hendrerit felis. Aliquam sed malesuada eros..
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Money Maker</p>
+                    <p class="card-content">
+                        Praesent convallis, libero quis congue
+                        elementum, nunc ante faucibus sapien, ac
+                        scelerisque tortor purus sit amet ex.
+                        Pellentesque mollis nec sem vel aliquam.
+                    </p>
+                    <div class="card-icons">
+                        <span class="search-icon iconify" data-icon="mdi:star-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="mdi:eye-add-outline"></span>
+                        <span class="search-icon iconify" data-icon="ant-design:fork-outlined"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="announcements">
+            <p class="section-title">Announcements</p>
+            <ul class="card">
+                <li class="announcement">
+                    <p class="announcement-title">Site Maintenance</p>
+                    <p class="announcement-content">
+                        Vestibulum condimentum tellus lacus,
+                        in accumsan elit maximus ac. Donec
+                        hendrerit sodales conque..
+                    </p>
+                </li>
+                <li class="announcement">
+                    <p class="announcement-title">Community Share Day</p>
+                    <p class="announcement-content">
+                        Nam vel lectus tincidunt, rutrum nulla
+                        eu, ornare libero. Aliquam dictum
+                        accumsan porttitor...
+                    </p>
+                </li>
+                <li class="announcement">
+                    <p class="announcement-title">Updated Privacy Policy</p>
+                    <p class="announcement-content">
+                        Phasellus efficitur nisi eget elit
+                        consectetur, eget condimentum ante
+                        auctor. Cras fringilla sagittis sem in mattis...
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="trending">
+            <p class="section-title">Trending</p>
+            <ul class="card">
+                <li class="trend">
+                    <img src="images/user-pfp-2.jpeg" alt="User profile pic" class="user-pfp-sml">
+                    <div class="account">
+                        <p class="username">@tegan</p>
+                        <p class="user-bio">World Peace Builder</p>
+                    </div>
+                </li>
+                <li class="trend">
+                    <img src="images/user-pfp.jpeg" alt="User profile pic" class="user-pfp-sml">
+                    <div class="account">
+                        <p class="username">@morgan</p>
+                        <p class="user-bio">Super Cool Project</p>
+                    </div>
+                </li>
+                <li class="trend">
+                    <img src="images/user-pfp-3.jpeg" alt="User profile pic" class="user-pfp-sml">
+                    <div class="account">
+                        <p class="username">@kendall</p>
+                        <p class="user-bio">Life Changing App</p>
+                    </div>
+                </li>
+                <li class="trend">
+                    <img src="images/user-pfp-4.png" alt="User profile pic" class="user-pfp-sml">
+                    <div class="account">
+                        <p class="username">@alex</p>
+                        <p class="user-bio">No Traffic Maker</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
